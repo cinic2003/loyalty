@@ -20,10 +20,10 @@ set :branch, 'master'
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, ['config/database.yml', 'config/secrets.yml', 'log']
+set :shared_paths, ['config/database.yml', 'config/secrets.yml', 'log', 'app/assets/images']
 
 # Optional settings:
-#   set :user, 'foobar'    # Username in the server to SSH to.
+  set :user, 'deployer'    # Username in the server to SSH to.
 #   set :port, '30000'     # SSH port number.
 #   set :forward_agent, true     # SSH forward_agent.
 
@@ -42,33 +42,26 @@ end
 # For Rails apps, we'll make some of the shared paths that are shared between
 # all releases.
 task :setup => :environment do
-  queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
-  queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/log"]
-
-  queue! %[mkdir -p "#{deploy_to}/#{shared_path}/config"]
-  queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/config"]
-
-  queue! %[touch "#{deploy_to}/#{shared_path}/config/database.yml"]
-  queue! %[touch "#{deploy_to}/#{shared_path}/config/secrets.yml"]
-  queue  %[echo "-----> Be sure to edit '#{deploy_to}/#{shared_path}/config/database.yml' and 'secrets.yml'."]
-
-  if repository
-    repo_host = repository.split(%r{@|://}).last.split(%r{:|\/}).first
-    repo_port = /:([0-9]+)/.match(repository) && /:([0-9]+)/.match(repository)[1] || '22'
-
-    queue %[
-      if ! ssh-keygen -H  -F #{repo_host} &>/dev/null; then
-        ssh-keyscan -t rsa -p #{repo_port} -H #{repo_host} >> ~/.ssh/known_hosts
-      fi
-    ]
+  %w(log config tmp).each do |path|
+    queue! %[mkdir -p "#{deploy_to}/shared/#{path}"]
+    queue! %[chmod g+rx,u+rwx "#{deploy_to}/shared/#{path}"]
   end
+  
+  shared_paths.each do |file|
+    if File.extname(file).size > 0
+      queue! %[touch "#{deploy_to}/shared/#{file}"]
+      queue  %[echo "--------- Be sure to edit 'shared/#{file}'"]
+    end
+  end
+  
 end
 
 desc "Deploys the current version to the server."
 task :deploy => :environment do
-  to :before_hook do
+  # to :before_hook do
     # Put things to run locally before ssh
-  end
+  # end
+  
   deploy do
     # Put things that will set up an empty directory into a fully set-up
     # instance of your project.
