@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="keywords" content="Loyalty Electric,南京垅宜锝电气">
+    <meta name="description" content="南京垅宜锝电气有限公司">
+    <meta name="author" content="南京垅宜锝">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.html" type="image/x-icon">
+    <title>南京垅宜锝电气有限公司</title>
+    <!--[if lt IE 9]>
+    	<style type="text/css" media="screen">
+    	#backtotop > span,
+    	.shortcodeviewer,
+    	.social-icon a,
+    	#main .social-icon,
+    	#footer-wrapper .social-icon,
+    	.kwicks-info,
+    	.kwicks li:first-child,
+    	.kwicks li.last,
+    	.kwicks .kwicks-caption.kwicks1,
+    	.kwicks .kwicks-caption.kwicks5,
+    	.roundabout-moveable-item,
+    	.roundabout-moveable-item img,
+    	#liteaccordion,
+    	#liteaccordion.rounded,
+    	#liteaccordion.rounded ol li > h2.first,
+    	#liteaccordion.rounded ol li > h2.last,
+    	#liteaccordion.rounded ol li > h2.last.selected,
+    	.sliderNav #nav ul li a,
+    	#main,
+    	#main.main-transparent,
+    	.service-2 .icon,
+    	.service-3 .icon,
+    	.testimonial-widget-nav .prev,
+    	.testimonial-widget-nav .next,
+    	.sidebar #widget-contactForm li.buttons,
+    	#footer-wrapper #widget-contactForm li.buttons,
+    	.sidebar .widget_calendar tbody td a,
+    	#footer-wrapper div[id|="calendar"] tbody td a,
+    	.featured-thumbnail .zoom-icon.gallery-port .iconcontainer span,
+    	.faq_list dt,
+    	#contact-form .error-message.php-message,
+    	.contact-info,
+    	.testimonial,
+    	.testimonial .testi-pic a,
+    	.testimonial-bubble,
+    	.table,
+    	.dropcaps.circle,
+    	.dropcaps.hbar,
+    	.dropcaps.vbar,
+    	.dropcaps.square,
+    	.shortcode-button,
+    	.message-box,
+    	.message-box.small-icon,
+    	.message-box.no-icon,
+    	.shortcodeslider .nivo-controlNav a,
+    	.progress-bar.radius,
+    	.progress-bar.radius .progress-bar-meter,
+    	.progress-bar.radius .progress-bar-meter img,
+    	.personnel-shortcode .personnel-post,
+    	.personnel-shortcode .personnel-details strong,
+    	.tabs li a.active,
+    	.price-title-wrapper-left,
+    	.price-button-wrapper-left,
+    	.container_12 {
+    	position:relative;
+    	behavior:url(css/PIE.php);
+    	}
+    	</style>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    	<div style="clear:both; text-align:center; position:relative;">
+    		<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode">
+    			<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" />
+    		</a>
+    	</div>
+    <![endif]-->
+    
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <script type="text/javascript">
+    	jQuery(function(){
+    		jQuery('ul.sf-menu').supersubs({ 
+    			minWidth:18.4,   // minimum width of sub-menus in em units 
+    			maxWidth:27,	// maximum width of sub-menus in em units 
+    			extraWidth:1     // extra width can ensure lines don't sometimes turn over due to slight rounding differences and font-family 
+    		}).superfish({	// main navigation init
+    			delay:200,		// one second delay on mouseout 
+    			animation:{opacity:'show',height:"show"}, // fade-in and slide-down animation 
+    			speed:'normal',  // faster animation speed 
+    			autoArrows:false,   // generation of arrow mark-up (for submenu) 
+    			dropShadows:false   // drop shadows (for submenu)
+    		});
+    	});
+    </script>
+    <script type="text/javascript">
+    	jQuery(document).ready(function() {
+    		// nivoslider init
+    		jQuery('#nivoslider').nivoSlider({
+    			effect:'random',
+    			slices:15,
+    			boxCols:8,
+    			boxRows:4,
+    			animSpeed:500,
+    			pauseTime:5000,
+    			directionNav:false,
+    			directionNavHide:false,
+    			controlNav:true,
+    			controlNavThumbs:false,
+    			pauseOnHover:true,
+    			randomStart:false,
+    			manualAdvance:false
+    		});
+    	});
+    </script>
+  </head>
+
+  <body>
+    <div class="body-background">
+    	<div class="body-wrapper">
+    		<div id="header">
+          <%= render 'layouts/header' %>
+          
+          <%= yield %>
+    			<!-- end of .header-down-wrapper -->
+    		</div>
+    		<!-- end of #header -->
+    		<%#= yeild %>
+    		<!-- end of #main -->
+    		<%= render 'layouts/footer' %>
+    	<!-- end of .body-wrapper -->
+
+    	</div>
+    </div>
+  </body>
+</html>
