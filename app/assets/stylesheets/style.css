@@ -6,7 +6,7 @@
 .body-wrapper {
 	position:relative;
   width: 1020px;
-  margin: 50px auto;
+  margin: 5px auto;
 	z-index:2;
 	box-shadow:0 0 10px rgba(0, 0, 0, .2);
 	-moz-box-shadow:0 0 10px rgba(0, 0, 0, .2);
@@ -750,7 +750,7 @@ input[type='submit']:hover {
 	position:relative;
 	width:940px;
 	height:380px;
-	background:#63b1be url('loading.gif') no-repeat 50% 50%;
+	background:#63b1be url(loading.gif) no-repeat 50% 50%;
     margin-bottom:50px;
 }
 #nivoslider-wrapper .nivoSlider img {
@@ -967,7 +967,7 @@ input[type='submit']:hover {
 }
 #showcase-holder {
 	height:380px;
-	background:#323232 url('loading.gif') 50% 50% no-repeat;
+	background:#323232 url(loading.gif) 50% 50% no-repeat;
 	width:940px;
 	margin:0 auto;
 }
@@ -1294,7 +1294,7 @@ div.showcase-tooltip {
 #roundabout-loader {
 	height:380px;
 	margin:50px auto;
-	background:url('loading.gif') 50% 230px no-repeat;
+	background:url(loading.gif) 50% 230px no-repeat;
 }
 #roundabout-inner {
 	display:none;
@@ -1974,7 +1974,7 @@ div.showcase-tooltip {
 	padding:40px 10px 0;
 	overflow:hidden;
 	color:#bbbbbb;
-	background:#3f3f3f url(../images/footer-top.png) repeat-x;
+	background:#3f3f3f url(images/footer-top.png) repeat-x;
 }
 #footer-wrapper .widget > h4 {
 	color:#ffffff;
@@ -2098,7 +2098,7 @@ div.showcase-tooltip {
 }
 .sidebar .widget ul li,
 #footer-wrapper .widget ul li {
-	background:url(../images/star.png) 0 14px no-repeat;
+	background:url(images/star.png) 0 14px no-repeat;
 	padding:9px 0 8px 20px;
 	border-bottom:1px dotted #cecece;
 	list-style:none;
@@ -2526,7 +2526,7 @@ div.showcase-tooltip {
 #footer-wrapper #widget-contactForm .wait {
 	width:16px;
 	height:16px;
-	background:url(../images/loading.gif);
+	background:url(images/loading.gif);
 }
 
 /* my cycle posts */
@@ -3044,7 +3044,7 @@ div.showcase-tooltip {
 	cursor:pointer;
 	float:left;
 	margin-left:5px;
-	background:url(../images/post-car.png) no-repeat;
+	background:url(images/post-car.png) no-repeat;
 }
 .related-pagination-next {
 	background-position:-18px 0;
@@ -3651,7 +3651,7 @@ div.showcase-tooltip {
 	width:100%;
 	height:100%;
 	position:relative;
-	background:#f8f8f8 url(../images/loading.gif) 50% 50% no-repeat;
+	background:#f8f8f8 url(images/loading.gif) 50% 50% no-repeat;
 }
 .featured-thumbnail a.image-wrapper:hover {
 	background-image:none;
@@ -3906,7 +3906,7 @@ div.wpcf7-response-output {
 	width:100%;
 	clear:both;
 	margin-top:10px;
-	background:url(../images/divider.png) 0 23px repeat-x;
+	background:url(images/divider.png) 0 23px repeat-x;
 }
 #pagination {
 	float:left;
@@ -4045,7 +4045,7 @@ div.wpcf7-response-output {
 #contact-form .wait {
 	width:16px;
 	height:16px;
-	background:url(../images/loading.gif);
+	background:url(images/loading.gif);
 }
 .contact-info {
 	overflow:hidden;
@@ -4082,22 +4082,22 @@ div.wpcf7-response-output {
 	width:25%;
 }
 .contact-info .phone {
-	background-image:url(../images/icons/contact/phone.png);
+	background-image:url(images/icons/contact/phone.png);
 }
 .contact-info .fax {
-	background-image:url(../images/icons/contact/fax.png);
+	background-image:url(images/icons/contact/fax.png);
 }
 .contact-info .mobile {
-	background-image:url(../images/icons/contact/mobile.png);
+	background-image:url(images/icons/contact/mobile.png);
 }
 .contact-info .email {
-	background-image:url(../images/icons/contact/email.png);
+	background-image:url(images/icons/contact/email.png);
 }
 .contact-info .web {
-	background-image:url(../images/icons/contact/web.png);
+	background-image:url(images/icons/contact/web.png);
 }
 .contact-info .address {
-	background-image:url(../images/icons/contact/address.png);
+	background-image:url(images/icons/contact/address.png);
 }
 			
 /* testimonial
@@ -4123,7 +4123,7 @@ div.wpcf7-response-output {
 	padding:30px 30px 30px 235px;
 	overflow:hidden;
 	min-height:110px;
-	background:#e5e5e5 url(../images/quotes.png) no-repeat 170px 20px;
+	background:#e5e5e5 url(images/quotes.png) no-repeat 170px 20px;
 	font-family:'Philosopher', serif;
 	color:#5f5f5f;
 	font-style:italic;
@@ -4180,7 +4180,7 @@ div.wpcf7-response-output {
 	overflow:hidden;
 }
 .testimonial-shortcode-wrapper.dark {
-	background:url(../images/dark-pattern.png);
+	background:url(images/dark-pattern.png);
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -4234,7 +4234,7 @@ div.wpcf7-response-output {
 }
 .testimonial-bubble.dark {
 	color:#8b8b8b;
-	background:url(../images/dark-pattern.png);
+	background:url(images/dark-pattern.png);
 }
 .testimonial-bubble.dark p {
 	text-shadow:none;
@@ -4257,13 +4257,13 @@ div.wpcf7-response-output {
 .stunningtext {
 	position:relative;
 	padding:20px 30px;
-	background:url(../images/divider.png) repeat-y;
+	background:url(images/divider.png) repeat-y;
 	background-color:#e5e5e5;
 	font-size:13px;
 	overflow:hidden;
 }
 .stunningtext.dark {
-	background:url(../images/dark-pattern.png);
+	background:url(images/dark-pattern.png);
 	color:#8b8b8b;
 }
 .stunningtext-title {
@@ -4301,19 +4301,19 @@ div.wpcf7-response-output {
 	background-color:#ffffff;
 }
 .frame-left {
-	background:url(../images/white-frame.png) 0 0 no-repeat;
+	background:url(images/white-frame.png) 0 0 no-repeat;
 	padding:0 0 0 16px;
 }
 .frame-top {
-	background:url(../images/white-frame.png) 100% 0 no-repeat;
+	background:url(images/white-frame.png) 100% 0 no-repeat;
 	padding:16px 0 0;
 }
 .frame-right {
-	background:url(../images/white-frame.png) 100% 100% no-repeat;
+	background:url(images/white-frame.png) 100% 100% no-repeat;
 	padding:0 16px 0 0;
 }
 .frame-bottom {
-	background: url(../images/white-frame.png) 0 100% no-repeat;
+	background: url(images/white-frame.png) 0 100% no-repeat;
 	padding:0 0 16px 16px;
 	margin-left:-16px;
 }
@@ -4427,7 +4427,7 @@ div.wpcf7-response-output {
 	font-size:12px;
 }
 .search-wrapper input.submit {
-	background:url(../images/search-dark.png) 50% 50% no-repeat;
+	background:url(images/search-dark.png) 50% 50% no-repeat;
 	width:32px;
 	height:32px;
 	margin:0;
@@ -4469,7 +4469,7 @@ div.wpcf7-response-output {
 	top:11px;
 }
 #top-search-wrapper .searchform input.submit {
-	background:url(../images/search-dark.png) 50% 50% no-repeat;
+	background:url(images/search-dark.png) 50% 50% no-repeat;
 	position:absolute;
 	top:15px;
 	right:5px;
@@ -4638,7 +4638,7 @@ ol.commentlist p {
 	padding-left:10px;
 }
 .container_12.dark .ports-shortcode-headerlink {
-	background:#373737 url(../images/dark-pattern.png);
+	background:#373737 url(images/dark-pattern.png);
 }
 .container_12.dark .ports-shortcode-headerlink a:hover {
 	color:#ffffff;
@@ -4669,7 +4669,7 @@ ol.commentlist p {
 	cursor:pointer;
 	float:left;
 	margin-left:5px;
-	background:url(../images/post-car.png) no-repeat;
+	background:url(images/post-car.png) no-repeat;
 }
 .posts-shortcode-nav .prev:hover,
 .posts-shortcode-nav .next:hover {
