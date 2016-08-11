@@ -98,13 +98,13 @@ ul.sf-menu li li li.sfHover ul {
 	.sf-menu > li:hover > a,
 	.sf-menu > li.sfHover > a,
 	.sf-menu > li.current-menu-item > a {
-		border-color:#63b1b3;
+		border-color:#39c2f0;
 		background-color:transparent;
 	}
 	.sf-menu > li > a:hover,
 	.sf-menu > li.sfHover > a,
 	.sf-menu > li.current-menu-item > a {
-		color:#63b1b3;
+		color:#39c2f0;
 	}
 .sf-menu li ul {
 	width:100%;
